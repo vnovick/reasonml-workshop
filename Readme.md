@@ -112,3 +112,5 @@ Use `create-react-app` to create new React app and convert it to Reason.
 - Add search filter to search movies
 
 > You can either style using plain css, bs-css or for the sake of speed bs-material-ui
+
+- Try importing Material UI components instead of using bs-material-ui
