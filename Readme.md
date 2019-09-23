@@ -103,3 +103,12 @@ write a function that takes two arguments of 3 dimensional vectors and multiply 
 - Use [chalk.js](https://github.com/chalk/chalk) to write in different colors
 - Fetch list of planets from [starwars api]() and convert them to records
 - Print list of planets to the console and if it's Tatoine, color it in blue.
+
+### ReasonReact
+
+Use `create-react-app` to create new React app and convert it to Reason.
+
+- Fetch movies from [OMDB API](http://www.omdbapi.com/)
+- Add search filter to search movies
+
+> You can either style using plain css, bs-css or for the sake of speed bs-material-ui
