@@ -1,0 +1,14 @@
+{
+  "name": "reasonml-workshop",
+  "version": "1.0.0",
+  "description": "Reason lets you write simple, fast and quality type safe code while leveraging both the JavaScript & OCaml ecosystems. In this workshop we won't only see how and why we should write our code in ReasonML, but talk about practical applications of using ReasonML in new or existing React projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bs-platform": "^5.0.6"
+  }
+}
