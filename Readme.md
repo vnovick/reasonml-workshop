@@ -96,3 +96,10 @@ write a function that takes two arguments of 3 dimensional vectors and multiply 
 - Using [List](https://reasonml.github.io/api/List.html) sorting functions sort the following list to be unique, reverse it and convert each element to string [8,5,3,5,2,6,2,5,8,3,6,7]
 
 - write a function that determines if a word is an [isogram](https://en.wikipedia.org/wiki/Isogram)
+
+### Bucklescript
+
+- Use [figlet.js](https://github.com/patorjk/figlet.js) to print an Ascii message the in console.
+- Use [chalk.js](https://github.com/chalk/chalk) to write in different colors
+- Fetch list of planets from [starwars api]() and convert them to records
+- Print list of planets to the console and if it's Tatoine, color it in blue.
