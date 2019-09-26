@@ -95,14 +95,15 @@ write a function that takes two arguments of 3 dimensional vectors and multiply 
 
 - Using [List](https://reasonml.github.io/api/List.html) sorting functions sort the following list to be unique, reverse it and convert each element to string [8,5,3,5,2,6,2,5,8,3,6,7]
 
-- write a function that determines if a word is an [isogram](https://en.wikipedia.org/wiki/Isogram)
+
 
 ### Bucklescript
 
-- Use [figlet.js](https://github.com/patorjk/figlet.js) to print an Ascii message the in console.
+
 - Use [chalk.js](https://github.com/chalk/chalk) to write in different colors
-- Fetch list of planets from [starwars api]() and convert them to records
-- Print list of planets to the console and if it's Tatoine, color it in blue.
+- Fetch list of planets from [starwars api]() and print them. (take in mind that bs-fetch won't work in Nodejs. Use isomorphic-fetch)
+- convert response to record
+- Print list of planets to the console and color them differently based on different parameters
 
 ### ReasonReact
 
@@ -110,7 +111,5 @@ Use `create-react-app` to create new React app and convert it to Reason.
 
 - Fetch movies from [OMDB API](http://www.omdbapi.com/)
 - Add search filter to search movies
-
-> You can either style using plain css, bs-css or for the sake of speed bs-material-ui
-
-- Try importing Material UI components instead of using bs-material-ui
+- For layout and styling use `bs-material-ui` or plain `css`
+  Bonus/Homework: style yourself with `bs-css`
