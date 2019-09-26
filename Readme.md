@@ -83,14 +83,58 @@ Run the following in `rtop` and in web console and compare results
 - `1.5 *. 1e3 /. 5`
 - `12. /. 5. *. 4.`
 - What replacement for the function `f` renders the expression `f("3") < 1415` correct?
-- write a function that takes an integer x between 10 and 99 and returns an integer whose digits have been exchanged exchanged (73) = 37;
+Solution:
+
+```
+let f = int_of_string;
+```
+
+- write a function that takes an integer x between 10 and 99 and returns an integer whose digits have been exchanged (73) = 37;
+
+Solution:
+
+```
+let reverseNum = (num) => {
+switch (num) {
+| n when n < 10 || n > 99 => "Not a two digit number"
+| n => num mod 10 * 10 + num / 10 |> string_of_int
+}};
+```
+
 
 write a function that takes two arguments of 3 dimensional vectors and multiply them It's also called cross product and is calculated as following:
 
 ![](https://camo.githubusercontent.com/21f93b353d1cb69bf6169e89b6612dc2641e0c7c/68747470733a2f2f77696b696d656469612e6f72672f6170692f726573745f76312f6d656469612f6d6174682f72656e6465722f7376672f31653434666432336637383864326635383966323633343432343537363535313165353232653562)
 
+```
+let cross = ((a1,a2,a3),(b1,b2,b3)) => {
+  (a2*b3 - a3*b2, a3*b1 - a1*b3, a1*b2 - a2*b1)
+};
+```
+
 - Create a sample api response record containing fields name, lastName, age, aboutMe, twitterHandle
+
+```reasonml
+type apiResponse = Loading | Error(string) | Response(response);
+```
+
 - Create an response variant type that will return different request states. Loading, Error with error codes, response of api response type you've created earlier
 - Pattern match on the api response and return different messages for different network errors, if the name in response is yours, then print custom messages
 
+```reasonml
+switch (Response({ name: "Vladimir", lastName: "Novick" })) {
+| Loading => "Loading"
+| Error(404) => "404 Error"
+| Error(401) => "401 Error"
+| Error(_) => "Error"
+| Response({ name: "Vladimir" }) => "Hey"
+| Response(x) => x.name
+};
+
+```
+
 - Using [List](https://reasonml.github.io/api/List.html) sorting functions sort the following list to be unique, reverse it and convert each element to string [8,5,3,5,2,6,2,5,8,3,6,7]
+
+```reasonml
+[8,5,3,5,2,6,2,5,8,3,6,7] |> List.sort_uniq(compare) |> List.rev |> List.map(string_of_int);
+```
