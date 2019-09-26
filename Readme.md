@@ -94,5 +94,3 @@ write a function that takes two arguments of 3 dimensional vectors and multiply 
 - Pattern match on the api response and return different messages for different network errors, if the name in response is yours, then print custom messages
 
 - Using [List](https://reasonml.github.io/api/List.html) sorting functions sort the following list to be unique, reverse it and convert each element to string [8,5,3,5,2,6,2,5,8,3,6,7]
-
-- write a function that determines if a word is an [isogram](https://en.wikipedia.org/wiki/Isogram)
