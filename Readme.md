@@ -83,7 +83,7 @@ Run the following in `rtop` and in web console and compare results
 - `1.5 *. 1e3 /. 5`
 - `12. /. 5. *. 4.`
 - What replacement for the function `f` renders the expression `f("3") < 1415` correct?
-Solution:
+  Solution:
 
 ```
 let f = int_of_string;
@@ -100,7 +100,6 @@ switch (num) {
 | n => num mod 10 * 10 + num / 10 |> string_of_int
 }};
 ```
-
 
 write a function that takes two arguments of 3 dimensional vectors and multiply them It's also called cross product and is calculated as following:
 
@@ -138,3 +137,38 @@ switch (Response({ name: "Vladimir", lastName: "Novick" })) {
 ```reasonml
 [8,5,3,5,2,6,2,5,8,3,6,7] |> List.sort_uniq(compare) |> List.rev |> List.map(string_of_int);
 ```
+
+### Bucklescript
+
+- Use [chalk.js](https://github.com/chalk/chalk) to write in different colors
+- Fetch list of planets from [starwars api]() and print them. (take in mind that bs-fetch won't work in Nodejs. Use isomorphic-fetch)
+- convert response to record
+- Print list of planets to the console and color them differently based on different parameters
+
+### ReasonReact
+
+Use `create-react-app` to create new React app and convert it to Reason.
+
+- Fetch movies from [OMDB API](http://www.omdbapi.com/)
+- Add search filter to search movies
+- For layout and styling use `bs-material-ui` or plain `css`
+  Bonus/Homework: style yourself with `bs-css`
+
+### GraphQL in Reason
+
+[learn.hasura.io](https://learn.hasura.io) - choose Reason for ReasonApollo
+
+- Homework: implement the same with Reason apollo hooks
+
+## Next steps
+
+[My Youtube channel](https://youtube.com/c/VladimirNovickDev)
+[My Twitch channel](https://twitch.tv/vnovick)
+[GraphQL learn tutorials](https://learn.hasura.io)
+[Hasura Twitch channel](https://twitch.tv/HasuraHQ)
+[Twitter @VladimirNovick](https://twitter.com/VladimirNovick)
+[ReasonML Docs](https://reasonml.github.io/en/)
+[Bucklescript docs Docs](https://bucklescript.github.io/en/)
+[ReasonReact Docs](https://reasonml.github.io/reason-react/en/)
+[Reason Community](https://reasonml.github.io/docs/en/community)
+[Redex search bindings](https://redex.github.io/)
